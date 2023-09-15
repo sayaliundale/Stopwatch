@@ -1,0 +1,61 @@
+.container{
+    width:55rem;
+    height:33rem;
+    background-color: bisque;
+    margin-left: 23rem;
+    margin-top:8rem;
+}
+h1{
+    text-align: center;
+    position: relative;
+    top:2rem;
+    font-size: 3rem;
+    
+}
+.time{
+    background-color: rgb(200, 200, 238);
+    height:18rem;
+    margin-top: 5rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.time div{
+    position: relative;
+    top:-0.8rem;
+}
+.time div div{
+   
+    width:10rem;
+    height: 10rem;
+    background-color: rgb(148, 169, 169);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+.time div p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buttons{
+    height:7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons button{
+    width:7rem;
+    height: 3rem;
+    background-color: azure;
+    font-size: 1.5rem;
+    
+}
+#input{
+    border:none;
+    font-size: 3rem;
+    background-color: transparent;
+   width:5rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sptopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stopwatch</h1>
+
+      <div class="time">
+        <div>
+          <p>Days</p>
+          <div class="days"></div>
+        </div>
+
+        <div>
+            <p>Hours</p>
+        <div class="hours"></div>
+        </div>
+
+      <div>
+        <p>Minutes</p>
+        <div class="minutes" id="minutes">
+          <input type="number" name="" id="input1" />
+        </div>
+      </div>
+
+       <div>
+        <p>Seconds</p>
+        <div class="seconds" id="seconds">
+          <input type="number" name="" id="input" />
+        </div>
+      </div>
+      </div>
+      <div class="buttons">
+        <button onclick="stop()">Stop</button>
+        <button onclick="set()">Set</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="stopwatch.js"></script>
+</html>
