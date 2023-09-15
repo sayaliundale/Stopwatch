@@ -1,31 +1,39 @@
+let i = null; 
+
 function set() {
-    var input = document.getElementById("input").value;
-    var input1= document.getElementById("input1").value;
-    
-    let left = parseInt(input); 
-    let left1=parseInt(input1);
-  
-    
-  
+  var input = document.getElementById("input").value;
+  var input1 = document.getElementById("input1").value;
+  var input2 = document.getElementById("input2").value;
+
+  let timer = parseInt(input);
+  let timer1 = parseInt(input1);
+  let timer2 = parseInt(input2);
+
   function counter() {
-    if (left >= 1) {
-      left--;
-      if (left == 0) {
-        left1--;
-        document.getElementById("minutes").innerHTML = left1;
-        left = 60; // Reset left to 60 when it reaches 0
+    if (timer >= 1) {
+      timer--;
+
+      if (timer === 0) {
+        if (timer1 >= 1) {
+          timer1--;
+          timer = 59;
+        }
+
+        if (timer1 === 0 && timer2 >= 1) {
+          timer2--;
+          timer1 = 59;
+        }
       }
-      document.getElementById("seconds").innerHTML = left;
+
+      document.getElementById("hours").innerHTML = timer2;
+      document.getElementById("minutes").innerHTML = timer1;
+      document.getElementById("seconds").innerHTML = timer;
     }
   }
-  
-  // Call the counter function every second (1000 milliseconds)
-  setInterval(counter, 1000);
-  
-   
-  
-    const time=setInterval(counter,1000);
-    
-    
-    
-  }
+
+  i = setInterval(counter, 1000);
+}
+
+function stop() {
+  clearInterval(i); 
+}
