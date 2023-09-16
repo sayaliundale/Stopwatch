@@ -55,6 +55,7 @@ h1{
 }
 #pause{
     display: none;
+    margin-right: 24rem;
 }
 #input,#input1,#input3, #input2{
     border:none;

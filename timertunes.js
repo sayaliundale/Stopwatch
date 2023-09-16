@@ -30,6 +30,7 @@ function set() {
       document.getElementById("resume").style.visibility="hidden";
       document.getElementById("set").style.visibility="hidden";
       document.getElementById("pause").style.display="block";
+      
      Audio1.play();
      volume=Audio1.volume;
     }
