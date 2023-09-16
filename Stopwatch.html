@@ -36,11 +36,14 @@
       </div>
       </div>
       <div class="buttons">
-        <button onclick="stop()">Stop</button>
-        <button onclick="set()">Set</button>
-        <button onclick="resume()">Resume</button>
+        <button onclick="stop()" id="stop">Stop</button>
+        <button onclick="set()" id="set">Set</button>
+        <button onclick="resume()" id="resume">Resume</button>
+        <button onclick="audiop()" id="pause">Pause</button>
       </div>
     </div>
+
+    <audio src="call-to-attention-123107.mp3" id="audio"></audio>
   </body>
   <script src="stopwatch.js"></script>
 </html>
